@@ -1,0 +1,50 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+.loading {
+  font-family: Lato;
+  font-size: 3rem;
+  margin-top: 5rem;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.aboutimg {
+  width: 250px;
+}
+
+.shop-data {
+  font-family: Lato;
+  font-size: 0.6rem;
+  color: blue;
+}
+
+.shop-item-card {
+  margin: 2rem auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-img {
+  max-width: 150px;
+}
+
+.item-title {
+  font-family: Lato;
+  font-size: 1.4rem;
+}
+
+.item-price {
+  font-weight: bold;
+  color: green;
+}
+
+.item-description {
+  font-size: 0.9rem;
+}
