@@ -2,10 +2,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <div>
+    <div className='content about'>
       <h1>About Page</h1>
       <p>This is the About page. Welcome !</p>
-      <img className='aboutimg' src="https://st.depositphotos.com/1038076/4870/i/600/depositphotos_48701865-stock-photo-about-us.jpg" alt="about" />
+      <img className='aboutimg' src="https://i.pinimg.com/originals/95/b0/67/95b06733ae365fb20ca2fb8d6efb72f4.png" alt="about" />
     </div>
   )
 }

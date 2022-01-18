@@ -20,15 +20,15 @@ const Shop = () => {
   };
 
   return (
-    <div>
+    <div className='content shop'>
       <h1>Shop</h1>
-      {loading && <div className='loading'>...Loading</div>}
+      {loading && <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>}
       <div className="shop-data">
         {shopData &&
           shopData.map((item) => (
-            <h2 key={item.id}>
+            <div key={item.id} className='item-link'>
               <Link to={`/shop/${item.id}`}>{item.title}</Link>
-            </h2>
+            </div>
           ))}
       </div>
     </div>

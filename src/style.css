@@ -1,50 +1,193 @@
-h1,
-p {
-  font-family: Lato;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Quicksand';
+  color: #333;
 }
 
-.loading {
-  font-family: Lato;
-  font-size: 3rem;
-  margin-top: 5rem;
-  width: 100%;
-  display: grid;
-  place-items: center;
+.App {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.aboutimg {
+.content {
+  margin-top: 2rem;
+  animation: fly-in 0.5s ease;
+  padding: 0 1rem;
+}
+
+@keyframes fly-in {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.svg-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #f1356d;
+}
+
+.svg-icon circle {
+  stroke: #f1356d;
+  stroke-width: 1;
+}
+
+.home-img {
   width: 250px;
 }
 
-.shop-data {
-  font-family: Lato;
-  font-size: 0.6rem;
-  color: blue;
+.home h1 {
+  margin-bottom: 1rem;
+}
+
+.about h1 {
+  margin-bottom: 1rem;
+}
+
+.about img {
+  width: 250px;
+}
+
+.shop h1 {
+  margin-bottom: 1rem;
+}
+
+.item-link {
+  padding: 0.4rem;
+}
+
+.shop-data a {
+  border-radius: 5px;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.shop-data a:hover {
+  background-color: #f1356d;
+  color: white;
 }
 
 .shop-item-card {
+  animation: fly-in 0.5s ease;
   margin: 2rem auto;
-  max-width: 500px;
+  max-width: 400px;
+  gap: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.item-img {
-  max-width: 150px;
-}
-
-.item-title {
-  font-family: Lato;
+.loading {
+  margin-top: 1rem;
   font-size: 1.4rem;
+}
+
+.shop-item-card img {
+  width: 200px;
 }
 
 .item-price {
   font-weight: bold;
-  color: green;
+  color: #f1356d;
+  font-size: 1.2rem;
 }
 
 .item-description {
-  font-size: 0.9rem;
+  font-style: italic;
+  font-size: 1.15rem;
+}
+
+.lds-spinner {
+  margin-top: 3rem;
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 37px;
+  width: 6px;
+  height: 18px;
+  border-radius: 20%;
+  background: #f1356d;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
