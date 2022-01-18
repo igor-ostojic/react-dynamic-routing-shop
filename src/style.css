@@ -191,3 +191,34 @@
     opacity: 0;
   }
 }
+
+@media (max-width: 600px) {
+  .App {
+    max-width: 100%;
+    margin: 0 0 1rem 0;
+    padding: 0 1rem;
+  }
+
+  .item-link {
+    width: 100%;
+  }
+
+  .shop-data a {
+    border-radius: 5px;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+  .shop-item-card {
+    text-align: center;
+    animation: fly-in 0.5s ease;
+    margin: 2rem auto;
+    max-width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

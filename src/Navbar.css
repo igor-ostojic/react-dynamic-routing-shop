@@ -22,3 +22,27 @@
 .navbar a:hover {
   color: #f1356d;
 }
+
+@media (max-width: 600px) {
+  .navbar {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 100%;
+    margin: 1rem 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  .navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 0rem;
+  }
+}
